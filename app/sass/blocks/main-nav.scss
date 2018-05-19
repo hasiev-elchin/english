@@ -129,13 +129,13 @@
 
   .main-nav--opened .main-nav__wrapper {
     position: fixed;
-    top: 95px;
+    top: 103px;
     bottom: 0;
     left: 0;
 
     flex-direction: column;
     align-items: stretch;
-    justify-content: space-around;
+    justify-content: flex-start;
     width: 100%;
   }
 
