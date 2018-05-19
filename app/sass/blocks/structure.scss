@@ -1,0 +1,13 @@
+.structure {
+  @include pattern-gradient-bg();
+  padding: 75px 0;
+}
+
+.structure__title {
+  margin-bottom: 70px;
+}
+
+.structure__list {
+  margin-bottom: 70px;
+  text-align: center;
+}

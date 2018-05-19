@@ -1,0 +1,26 @@
+.social {
+  padding: 0;
+  margin: 0;
+
+  list-style-type: none;
+}
+
+.social__item {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 35px;
+
+  font-size: 0;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social__item svg {
+  fill: #009aff;
+}
+
+.social__item a {
+  display: block;
+}

@@ -1,0 +1,31 @@
+.promo {
+  @include pattern-gradient-bg();
+  padding-top: 100px;
+}
+
+.promo .container {
+  padding: 163px 0 181px;
+  background: url("../img/promo-girl.png") no-repeat bottom right;
+}
+
+.promo__title {
+  margin: 0;
+  margin-bottom: 19px;
+
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 50px;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+}
+
+.promo__descr {
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+}

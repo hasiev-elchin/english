@@ -1,0 +1,34 @@
+.features {
+  padding: 170px 0;
+  padding-bottom: 0;
+}
+
+.features__item {
+  margin-bottom: 100px;
+}
+
+.features__item .row {
+  align-items: center;
+}
+
+.features__item-title {
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-weight: 300;
+  font-size: 45px;
+  line-height: 55px;
+  font-family: 'Roboto', sans-serif;
+  color: #333333;
+}
+
+.features__item-descr {
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: 'Roboto', sans-serif;
+  color: #666666;
+}

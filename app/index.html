@@ -1,0 +1,484 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>English learning</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:100,300,400,500,700&amp;subset=cyrillic-ext" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+<svg display="none">
+  <path id="mail-icon" d="M485.211,363.906c0,10.637-2.992,20.498-7.785,29.174L324.225,221.67l151.54-132.584   c5.895,9.355,9.446,20.344,9.446,32.219V363.906z M242.606,252.793l210.863-184.5c-8.653-4.737-18.397-7.642-28.908-7.642H60.651   c-10.524,0-20.271,2.905-28.889,7.642L242.606,252.793z M301.393,241.631l-48.809,42.734c-2.855,2.487-6.41,3.729-9.978,3.729   c-3.57,0-7.125-1.242-9.98-3.729l-48.82-42.736L28.667,415.23c9.299,5.834,20.197,9.329,31.983,9.329h363.911   c11.784,0,22.687-3.495,31.983-9.329L301.393,241.631z M9.448,89.085C3.554,98.44,0,109.429,0,121.305v242.602   c0,10.637,2.978,20.498,7.789,29.174l153.183-171.44L9.448,89.085z"/>
+
+  <path id="phone-icon" d="M577.83,456.128c1.225,9.385-1.635,17.545-8.568,24.48l-81.396,80.781    c-3.672,4.08-8.465,7.551-14.381,10.404c-5.916,2.857-11.729,4.693-17.439,5.508c-0.408,0-1.635,0.105-3.676,0.309    c-2.037,0.203-4.689,0.307-7.953,0.307c-7.754,0-20.301-1.326-37.641-3.979s-38.555-9.182-63.645-19.584    c-25.096-10.404-53.553-26.012-85.376-46.818c-31.823-20.805-65.688-49.367-101.592-85.68    c-28.56-28.152-52.224-55.08-70.992-80.783c-18.768-25.705-33.864-49.471-45.288-71.299    c-11.425-21.828-19.993-41.616-25.705-59.364S4.59,177.362,2.55,164.51s-2.856-22.95-2.448-30.294    c0.408-7.344,0.612-11.424,0.612-12.24c0.816-5.712,2.652-11.526,5.508-17.442s6.324-10.71,10.404-14.382L98.022,8.756    c5.712-5.712,12.24-8.568,19.584-8.568c5.304,0,9.996,1.53,14.076,4.59s7.548,6.834,10.404,11.322l65.484,124.236    c3.672,6.528,4.692,13.668,3.06,21.42c-1.632,7.752-5.1,14.28-10.404,19.584l-29.988,29.988c-0.816,0.816-1.53,2.142-2.142,3.978    s-0.918,3.366-0.918,4.59c1.632,8.568,5.304,18.36,11.016,29.376c4.896,9.792,12.444,21.726,22.644,35.802    s24.684,30.293,43.452,48.653c18.36,18.77,34.68,33.354,48.96,43.76c14.277,10.4,26.215,18.053,35.803,22.949    c9.588,4.896,16.932,7.854,22.031,8.871l7.648,1.531c0.816,0,2.145-0.307,3.979-0.918c1.836-0.613,3.162-1.326,3.979-2.143    l34.883-35.496c7.348-6.527,15.912-9.791,25.705-9.791c6.938,0,12.443,1.223,16.523,3.672h0.611l118.115,69.768    C571.098,441.238,576.197,447.968,577.83,456.128z"/>
+
+  <path id="facebook-icon" d="M72.089,0.02L59.624,0C45.62,0,36.57,9.285,36.57,23.656v10.907H24.037c-1.083,0-1.96,0.878-1.96,1.961v15.803   c0,1.083,0.878,1.96,1.96,1.96h12.533v39.876c0,1.083,0.877,1.96,1.96,1.96h16.352c1.083,0,1.96-0.878,1.96-1.96V54.287h14.654   c1.083,0,1.96-0.877,1.96-1.96l0.006-15.803c0-0.52-0.207-1.018-0.574-1.386c-0.367-0.368-0.867-0.575-1.387-0.575H56.842v-9.246   c0-4.444,1.059-6.7,6.848-6.7l8.397-0.003c1.082,0,1.959-0.878,1.959-1.96V1.98C74.046,0.899,73.17,0.022,72.089,0.02z"/>
+
+  <path id="telegram-icon" d="M5.299,144.645l69.126,25.8l26.756,86.047c1.712,5.511,8.451,7.548,12.924,3.891l38.532-31.412   c4.039-3.291,9.792-3.455,14.013-0.391l69.498,50.457c4.785,3.478,11.564,0.856,12.764-4.926L299.823,29.22   c1.31-6.316-4.896-11.585-10.91-9.259L5.218,129.402C-1.783,132.102-1.722,142.014,5.299,144.645z M96.869,156.711l135.098-83.207   c2.428-1.491,4.926,1.792,2.841,3.726L123.313,180.87c-3.919,3.648-6.447,8.53-7.163,13.829l-3.798,28.146   c-0.503,3.758-5.782,4.131-6.819,0.494l-14.607-51.325C89.253,166.16,91.691,159.907,96.869,156.711z"/>
+
+  <path id="youtube-icon" d="M490.24,113.92c-13.888-24.704-28.96-29.248-59.648-30.976C399.936,80.864,322.848,80,256.064,80    c-66.912,0-144.032,0.864-174.656,2.912c-30.624,1.76-45.728,6.272-59.744,31.008C7.36,138.592,0,181.088,0,255.904    C0,255.968,0,256,0,256c0,0.064,0,0.096,0,0.096v0.064c0,74.496,7.36,117.312,21.664,141.728    c14.016,24.704,29.088,29.184,59.712,31.264C112.032,430.944,189.152,432,256.064,432c66.784,0,143.872-1.056,174.56-2.816    c30.688-2.08,45.76-6.56,59.648-31.264C504.704,373.504,512,330.688,512,256.192c0,0,0-0.096,0-0.16c0,0,0-0.064,0-0.096    C512,181.088,504.704,138.592,490.24,113.92z M192,352V160l160,96L192,352z"/>
+</svg>
+
+  <header class="main-header">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col col-lg-3 d-flex">
+          <a href="#" class="main-header__logo">
+            <img class="main-header__logo-img" src="img/pathfinder-logo.svg" width="219" height="44" alt="Pathfinder">
+          </a>
+        </div>
+        <div class="col-3 col-xs-2 col-lg-9">
+          <nav class="main-nav main-nav--closed">
+            <button class="main-nav__toggle">Открыть меню</button>
+            <div class="main-nav__wrapper">
+              <ul class="main-nav__list">
+                <li class="main-nav__item">
+                  <a href="#">Виды курсов</a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#">Структура занятий</a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#">Отзывы</a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#">Цены</a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#">Онлайн-тест</a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#">Контакты</a>
+                </li>
+              </ul>
+              <ul class="main-nav__language">
+                <li class="main-nav__language-item main-nav__language-item--active">
+                  <a class="main-nav__language-link main-nav__language-link--ru" href="#">Русский</a>
+                </li>
+                <li class="main-nav__language-item">
+                  <a class="main-nav__language-link main-nav__language-link--ukr" href="#">Украинский</a>
+                </li>
+                <li class="main-nav__language-item">
+                  <a class="main-nav__language-link main-nav__language-link--en" href="#">Английский</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="promo">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h1 class="promo__title wow slideInLeft" data-wow-duration=".5s">
+              Учите английский онлайн по Skype с комфортом для себя!
+            </h1>
+            <p class="promo__descr wow slideInLeft" data-wow-duration="1s">
+              Привет! Меня зовут Ольга, я сертифицированный преподаватель
+              английского и французского языков. Уже более 7-и лет преподаю
+              английский для всех уровней владения языком и провожу занятия
+              онлайн. Хотите разговаривать на языке, а не всю жизнь его изучать?<br>
+              Я вам помогу.
+            </p>
+            <a href="#" class="promo__btn btn wow slideInLeft" data-wow-duration="1.2s">Записаться на занятие</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="courses">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-5">
+            <h2 class="courses__title title">
+              Английский, который<br>
+              подойдет каждому
+            </h2>
+          </div>
+        </div>
+        <div class="courses__list">
+          <div class="row align-items-stretch">
+            <div class="col-lg-4 wow slideInLeft">
+              <div class="courses__item courses__item--biz">
+                <h3 class="courses__item-title">Деловой английский</h3>
+                <p class="courses__item-descr">
+                  В рамках курса «Business English» вы сможете пополнить свой запас бизнес-лексики, попрактиковаться в ведении деловых переговоров, максимально приближенных к реальным, научиться составлять документы и писать деловые письма, а также развить в себе лидерские качества и навыки работы. Занятия проходят в форме ролевых игр, бизнес-проектов и ориентированы на решение самых актуальных бизнес-задач. Темы уроков затрагивают различные профессиональные области: IT, юриспруденцию , HR, реклама и другие.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 wow slideInUp">
+              <div class="courses__item courses__item--spoken">
+                <h3 class="courses__item-title">Разговорный английский</h3>
+                <p class="courses__item-descr">
+                  В основе курса «General English»  -  современная коммуникативная методика, где основной упор делается на обучение слушателей активному общению и развитию в первую очередь таких умений, как свободно и правильно говорить на английском, воспринимать беглую речь на слух, а также спонтанному использованию грамматических конструкций в разговорной речи. Программа обучения является многоступенчатой, позволяющая начать изучение английского с любого уровня владения.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 wow slideInRight">
+              <div class="courses__item courses__item--ielts">
+                <h3 class="courses__item-title">Подготовка к IELTS</h3>
+                <p class="courses__item-descr">
+                  IELTS — наиболее востребованный тест английского языка для учёбы и иммиграции в Великобританию, Канаду, Австралию и Новую Зеландию (конкурирующий тест TOEFL наиболее популярен в США и Канаде (министерство иммиграции Канады рассматривает результаты теста IELTS, но не принимает результаты TOEFL). Главное правило успешной сдачи экзамена IELTS — хороший уровень английского. Подготовка к IELTS это — ознакомление со структурой экзамена, умение правильно распределять время на каждый тест и постоянная практика.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="stats">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2 class="stats__title title title--white tac">Результаты студентов в цифрах</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 wow slideInDown" data-wow-delay=".1s">
+            <div class="stats__item">
+              <div class="stats__item-amount">
+                85
+              </div>
+              <p class="stats__item-descr">
+                Студентов успешно прошли<br>
+                job interview
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 wow slideInDown" data-wow-delay=".15s">
+            <div class="stats__item">
+              <div class="stats__item-amount">
+                30
+              </div>
+              <p class="stats__item-descr">
+                Занятий для прохождения<br>
+                уровня по международной<br>
+                шкале CERF
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 wow slideInDown" data-wow-delay=".20s">
+            <div class="stats__item">
+              <div class="stats__item-amount">
+                21
+              </div>
+              <p class="stats__item-descr">
+                Студент проходит обучение<br>
+                в англоязычных странах
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 wow slideInDown" data-wow-delay=".25s">
+            <div class="stats__item">
+              <div class="stats__item-amount">
+                7
+              </div>
+              <p class="stats__item-descr">
+                Общий средний балл по IELTS<br>
+                у студентов
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col tac">
+            <a href="#" class="btn wow slideInUp">Записаться на занятие</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="features">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 features__item wow slideInLeft">
+            <div class="row">
+              <div class="col-lg-6">
+                <h3 class="features__item-title">
+                  Новые технологии –
+                  новые возможности
+                </h3>
+                <p class="features__item-descr">
+                  Во время занятий вы можете записать и еще раз прослушать любой фрагмент урока. Это поможет вам отточить произношение отдельных фраз или повторить грамматику. Занятия английским по Skype – это отличная возможность для тех, кто хочет сэкономить время на дорогу и заниматься с любой точки мира в любое время. Вам больше не нужно тратить время на дорогу, нужен только стабильный интернет и хорошее настроение :)
+
+                </p>
+                <a href="#" class="btn btn--blue">Записаться на занятие</a>
+              </div>
+              <div class="col-lg-6">
+                <!-- В дальнейшем сюда нужно вставить видео. -->
+                <img src="img/features-video.jpg" width="647" height="410" alt="Technology" class="features__item-video">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 features__item wow slideInRight">
+            <div class="row">
+              <div class="col-lg-6">
+                <img src="img/features-time.png" width="965" height="568" alt="Messenger" class="features__item-video">
+              </div>
+              <div class="col-lg-6">
+                <h3 class="features__item-title">
+                  Все время урока<br>
+                  только для вас
+                </h3>
+                <p class="features__item-descr">
+                  В каждом уроке я уделяю все внимание студенту. В отличие от групповых занятий, все время урока – ваше. Кроме того, результаты студентов, которые проходят обучение английскому через Скайп, лучше групповых. Эффективность таких уроков намного выше, чем от занятий в классе, благодаря индивидуальному подходу к каждому студенту во время онлайн-сессии.
+                </p>
+                <a href="#" class="btn btn--blue">Записаться на занятие</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 features__item wow slideInLeft">
+            <div class="row">
+              <div class="col-lg-6">
+                <h3 class="features__item-title">
+                  Экономия денег<br>
+                  и времени
+                </h3>
+                <p class="features__item-descr">
+                  Чтобы добраться на занятия, практически всегда придется регулярно тратить определенную сумму денег на транспорт. Кроме того, тратится и время, особенно много занимает дорога в крупных городах – мегаполисы просто «пожирают» часы нашей жизни. На досуге сравните стоимость занятий через Skype со стоимостью классического урока у репетитора с учетом средств на дорогу. Вывод однозначный — обучение по Скайпу обойдется дешевле.
+                </p>
+                <a href="#" class="btn btn--blue">Записаться на занятие</a>
+              </div>
+              <div class="col-lg-6">
+                <img src="img/features-economy.png" width="715" height="426" alt="Saving money, and time." class="features__item-video">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 features__item wow slideInRight">
+            <div class="row">
+              <div class="col-lg-6">
+                <img src="img/features-certificate.png" width="669" height="892" alt="Certificate" class="features__item-video">
+              </div>
+              <div class="col-lg-6">
+                <h3 class="features__item-title">
+                  Cертификат Pathfinder<br>
+                  Online English School
+                </h3>
+                <p class="features__item-descr">
+                  Сертификат школы английского языка "Pathfinder" выдается по итогам обучения на всех уровнях программ "General English" и "Business English". Вы можете использовать документ в образовательных целях или для собеседования при приеме на работу. Сертификат имеет неопределенный срок действия.
+                </p>
+                <a href="#" class="btn btn--blue">Записаться на занятие</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="structure">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2 class="structure__title title title--white">Структура занятий</h2>
+          </div>
+        </div>
+        <div class="row structure__list justify-content-between">
+          <div class="col-lg-3 structure__item wow slideInDown" data-wow-delay=".1s">
+            <img src="img/structure__item-1.png" width="169" height="184" alt="Разговорная практика" class="structure__item-img">
+          </div>
+          <div class="col-lg-3 structure__item wow slideInDown" data-wow-delay=".15s">
+            <img src="img/structure__item-2.png" width="171" height="184" alt="Лексика и грамматика" class="structure__item-img">
+          </div>
+          <div class="col-lg-3 structure__item wow slideInDown" data-wow-delay=".20s">
+            <img src="img/structure__item-3.png" width="147" height="184" alt="Аудирование" class="structure__item-img">
+          </div>
+          <div class="col-lg-3 structure__item wow slideInDown" data-wow-delay=".25s">
+            <img src="img/structure__item-4.png" width="147" height="180" alt="Чтение и письмо" class="structure__item-img">
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-auto">
+            <a href="#" class="btn wow slideInUp">Записаться на занятие</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="container wow slideInUp">
+        <div class="row">
+          <div class="col">
+            <h2 class="reviews__title title title--white">Что говорят студенты</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="reviews__slider">
+              <div class="reviews__slider-item">
+                <p class="reviews__slider-text">
+                  Дуже вдячна моєму викладачеві Ользі за цікаві та ефективні заняття. По-перше, мені сподобався формат занять по скайпу, зручний та гнучкий, спокійна та комфортна атмосфера проведення занять, цікаві навчальні матеріали, як на загальну лексику, так і на ділову. З іншого боку - хочеться відмітити індивідуальний підхід до проведення занять з боку викладача, висока уважність, вміння підтримувати інтерес до навчання, а також високий професіоналізм. Окрім підвищення рівня володіння розмовними навиками, я мала змогу покращити знання граматики, дізнатися багато тонкощів, різних ньюансів, виключень та корисностей. Мої знання систематизувалися та значно покращився саме активний словарний запас. Ще раз дякую моєму викладачеві Олі!
+                </p>
+                <span class="reviews__slider-caption">Валерія  Богдан-Корецька, бізнес – аналітик та ризик-менеджер банку</span>
+              </div>
+              <div class="reviews__slider-item">
+                <p class="reviews__slider-text">
+                  Дуже вдячна моєму викладачеві Ользі за цікаві та ефективні заняття. По-перше, мені сподобався формат занять по скайпу, зручний та гнучкий, спокійна та комфортна атмосфера проведення занять, цікаві навчальні матеріали, як на загальну лексику, так і на ділову. З іншого боку - хочеться відмітити індивідуальний підхід до проведення занять з боку викладача, висока уважність, вміння підтримувати інтерес до навчання, а також високий професіоналізм. Окрім підвищення рівня володіння розмовними навиками, я мала змогу покращити знання граматики, дізнатися багато тонкощів, різних ньюансів, виключень та корисностей. Мої знання систематизувалися та значно покращився саме активний словарний запас. Ще раз дякую моєму викладачеві Олі!
+                </p>
+                <span class="reviews__slider-caption">Валерія  Богдан-Корецька, бізнес – аналітик та ризик-менеджер банку</span>
+              </div>
+              <div class="reviews__slider-item reviews__slider-item--initial">
+                <p class="reviews__slider-text">
+                  Дуже вдячна моєму викладачеві Ользі за цікаві та ефективні заняття. По-перше, мені сподобався формат занять по скайпу, зручний та гнучкий, спокійна та комфортна атмосфера проведення занять, цікаві навчальні матеріали, як на загальну лексику, так і на ділову. З іншого боку - хочеться відмітити індивідуальний підхід до проведення занять з боку викладача, висока уважність, вміння підтримувати інтерес до навчання, а також високий професіоналізм. Окрім підвищення рівня володіння розмовними навиками, я мала змогу покращити знання граматики, дізнатися багато тонкощів, різних ньюансів, виключень та корисностей. Мої знання систематизувалися та значно покращився саме активний словарний запас. Ще раз дякую моєму викладачеві Олі!
+                </p>
+                <span class="reviews__slider-caption">Валерія  Богдан-Корецька, бізнес – аналітик та ризик-менеджер банку</span>
+              </div>
+              <div class="reviews__slider-item">
+                <p class="reviews__slider-text">
+                  Дуже вдячна моєму викладачеві Ользі за цікаві та ефективні заняття. По-перше, мені сподобався формат занять по скайпу, зручний та гнучкий, спокійна та комфортна атмосфера проведення занять, цікаві навчальні матеріали, як на загальну лексику, так і на ділову. З іншого боку - хочеться відмітити індивідуальний підхід до проведення занять з боку викладача, висока уважність, вміння підтримувати інтерес до навчання, а також високий професіоналізм. Окрім підвищення рівня володіння розмовними навиками, я мала змогу покращити знання граматики, дізнатися багато тонкощів, різних ньюансів, виключень та корисностей. Мої знання систематизувалися та значно покращився саме активний словарний запас. Ще раз дякую моєму викладачеві Олі!
+                </p>
+                <span class="reviews__slider-caption">Валерія  Богдан-Корецька, бізнес – аналітик та ризик-менеджер банку</span>
+              </div>
+              <div class="reviews__slider-item">
+                <p class="reviews__slider-text">
+                  Дуже вдячна моєму викладачеві Ользі за цікаві та ефективні заняття. По-перше, мені сподобався формат занять по скайпу, зручний та гнучкий, спокійна та комфортна атмосфера проведення занять, цікаві навчальні матеріали, як на загальну лексику, так і на ділову. З іншого боку - хочеться відмітити індивідуальний підхід до проведення занять з боку викладача, висока уважність, вміння підтримувати інтерес до навчання, а також високий професіоналізм. Окрім підвищення рівня володіння розмовними навиками, я мала змогу покращити знання граматики, дізнатися багато тонкощів, різних ньюансів, виключень та корисностей. Мої знання систематизувалися та значно покращився саме активний словарний запас. Ще раз дякую моєму викладачеві Олі!
+                </p>
+                <span class="reviews__slider-caption">Валерія  Богдан-Корецька, бізнес – аналітик та ризик-менеджер банку</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="price">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2 class="price__title title wow slideInDown">Стоимость уроков аглийского по Skype</h2>
+          </div>
+        </div>
+        <div class="row price__list">
+          <div class="col-lg-4 wow slideInLeft">
+            <div class="price__item">
+              <h3 class="price__item-name"><b>10</b> занятий</h3>
+              <p class="price__item-cost"><sup>$ </sup>130 / 3500 <span>грн</span></p>
+              <span class="price__item-duration">Длительность занятия – <b>60 мин</b></span>
+              <a href="#" class="price__item-btn btn">Записаться на 10 занятий</a>
+              <ul class="price__item-features">
+                <li>Книга для уроков в формате PDF</li>
+                <li>Аудио-материалы для уроков</li>
+                <li>Весь урок на английском</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4 wow fadeIn">
+            <div class="price__item">
+              <h3 class="price__item-name"><b>20</b> занятий</h3>
+              <p class="price__item-cost"><sup>$ </sup>237 / 6400 <span>грн</span></p>
+              <span class="price__item-duration">Длительность занятия – <b>60 мин</b></span>
+              <a href="#" class="price__item-btn btn">Записаться на 20 занятий</a>
+              <ul class="price__item-features">
+                <li>Книга для уроков в формате PDF</li>
+                <li>Аудио-материалы для уроков</li>
+                <li>Весь урок на английском</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4 wow slideInRight">
+            <div class="price__item">
+              <h3 class="price__item-name"><b>30</b> занятий</h3>
+              <p class="price__item-cost"><sup>$ </sup>333 / 9000 <span>грн</span></p>
+              <span class="price__item-duration">Длительность занятия – <b>60 мин</b></span>
+              <a href="#" class="price__item-btn btn">Записаться на 30 занятий</a>
+              <ul class="price__item-features">
+                <li>Книга для уроков в формате PDF</li>
+                <li>Аудио-материалы для уроков</li>
+                <li>Весь урок на английском</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <header class="main-footer__header">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-3">
+            <a href="#" class="main-footer__logo">
+              <img class="main-footer__logo-img" src="img/pathfinder-logo.svg" width="219" height="44" alt="Pathfinder">
+            </a>
+          </div>
+          <div class="col-lg-7">
+            <section class="main-footer__contacts">
+              <a href="#" class="main-footer__contacts-phone">
+                <svg width="27px" height="27px" viewBox="0 0 578.106 578.106">
+                  <use xlink:href="#phone-icon"></use>
+                </svg>
+                +38 093 884 51 05 (Viber | Whatsapp)
+              </a>
+              <a href="#" class="main-footer__contacts-email">
+                <svg width="27px" height="21px" viewBox="0 0 485.211 485.211">
+                  <use xlink:href="#mail-icon"></use>
+                </svg>
+                online8english@gmail.com
+              </a>
+            </section>
+          </div>
+          <div class="col-lg-2">
+            <section class="main-footer__social">
+              <ul class="social">
+                <li class="social__item">
+                  <a href="#">
+                    <svg width="20px" height="25px" viewBox="0 0 96.124 96.123">
+                      <use xlink:href="#facebook-icon"></use>
+                    </svg>
+                    Facebook
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#">
+                    <svg width="28px" height="26px" viewBox="0 0 300 300">
+                      <use xlink:href="#telegram-icon"></use>
+                    </svg>
+                    Telegram
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#">
+                    <svg width="29px" height="25px" viewBox="0 0 512 512">
+                      <use xlink:href="#youtube-icon"></use>
+                    </svg>
+                    YouTube
+                  </a>
+                </li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-lg-4">
+          <section class="main-footer__copyright">
+            © Online English, 2018. Все права защищены.
+          </section>
+        </div>
+        <div class="col-lg-3">
+          <section class="main-footer__developer">
+            <a href="#">Developed by Elchin Hasiev</a>
+          </section>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/script.min.js"></script>
+</body>
+</html>

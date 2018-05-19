@@ -1,0 +1,33 @@
+.stats {
+  @include pattern-gradient-bg();
+  padding: 75px 0;
+}
+
+.stats__title {
+  margin-bottom: 90px;
+}
+
+.stats__item {
+  margin-bottom: 75px;
+
+  text-align: center;
+}
+
+.stats__item-amount {
+  margin: 0;
+  margin-bottom: 40px;
+
+  font-weight: 300;
+  font-size: 85px;
+  line-height: 1;
+  font-family: 'Roboto', sans-serif;
+}
+
+.stats__item-descr {
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  font-family: 'Roboto', sans-serif;
+}

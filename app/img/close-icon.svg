@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30.03" height="30.031" viewBox="0 0 30.03 30.031">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #008fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Close_Icon" data-name="Close Icon" class="cls-1" d="M2267.02,363.983l12.56-12.558a1.441,1.441,0,0,0-2.04-2.036l-12.56,12.557-12.55-12.555a1.441,1.441,0,1,0-2.04,2.037l12.56,12.557-12.56,12.555a1.441,1.441,0,1,0,2.04,2.037l12.55-12.557,12.56,12.557a1.441,1.441,0,0,0,2.04-2.037Z" transform="translate(-2249.97 -348.969)"/>
+</svg>
