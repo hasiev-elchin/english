@@ -1,10 +1,12 @@
 .promo {
   @include pattern-gradient-bg();
-  padding-top: 100px;
+  padding-top: 96.95px;
 }
 
 .promo .container {
-  padding: 163px 0 181px;
+  padding-top: 163px;
+  padding-bottom: 181px;
+
   background: url("../img/promo-girl.png") no-repeat bottom right;
 }
 
@@ -28,4 +30,40 @@
   line-height: 28px;
   font-family: 'Roboto', sans-serif;
   color: #fff;
+}
+
+@media (max-width: 1199.98px) {
+  .promo {
+    padding-top: 103px;
+  }
+
+  .promo .container {
+    padding-top: 90px;
+    padding-bottom: 170px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .promo .container {
+    background-size: 55%;
+  }
+
+  .promo__title {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  .promo__descr {
+
+  }
+}
+
+@media (max-width: 767.98px) {
+  
+
+  .promo .container {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background: none;
+  }
 }

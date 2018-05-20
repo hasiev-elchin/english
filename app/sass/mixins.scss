@@ -1,7 +1,7 @@
 @mixin pattern-gradient-bg {
   color: #ffffff;
 
-  background-image: url('../img/pattern.png'), linear-gradient( -35deg, rgb(0,122,255) 0%, rgb(0,185,255) 100%);
+  background-image: url('../img/pattern.png'), linear-gradient( 35deg, rgb(0,122,255) 0%, rgb(0,185,255) 100%);
   background-repeat: repeat;
   background-position: left top;
 }

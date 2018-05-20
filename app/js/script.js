@@ -1,9 +1,9 @@
 var mainHeader = document.querySelector('.main-header'),
 		promo = document.querySelector('.promo');
 
-if(parseInt(getComputedStyle(promo, null).paddingTop) < mainHeader.offsetHeight) {
-	promo.style.paddingTop = mainHeader.offsetHeight+"px";
-}
+// if(parseInt(getComputedStyle(promo, null).paddingTop) < mainHeader.offsetHeight) {
+// 	promo.style.paddingTop = mainHeader.offsetHeight+"px";
+// }
 
 var navMain = document.querySelector('.main-nav');
 var navToggle = document.querySelector('.main-nav__toggle');
