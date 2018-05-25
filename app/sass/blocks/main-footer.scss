@@ -67,20 +67,24 @@
 
 .main-footer__developer {
   text-align: right;
-}
-
-.main-footer__developer a {
-  text-decoration: none;
   font-weight: 300;
   font-size: 13px;
   line-height: 1;
   font-family: 'Roboto', sans-serif;
   color: #8493a8;
+}
 
-  transition: .3s color;
+.main-footer__developer a {
+  text-decoration: none;
+  color: inherit;
+
+  border-bottom: 1px solid;
+  border-bottom-color: #0099ff;
+  transition: .3s color, .3s border-bottom-color;
 
   &:hover {
     color: #0099ff;
+    border-bottom-color: transparent;
   }
 }
 
@@ -121,9 +125,6 @@
 
   .main-footer__developer {
     text-align: left;
-  }
-
-  .main-footer__developer a {
     font-size: 16px;
   }
 }

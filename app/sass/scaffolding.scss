@@ -78,9 +78,7 @@ img {
 
   &:hover,
   &:focus {
-    outline: none;
-    background-color: #008af5;
-    color: #fff;
+    box-shadow: 0 0 25px rgba(255,255,255,1);
   }
 
   &:active {
@@ -95,9 +93,7 @@ img {
 
     &:hover,
     &:focus {
-      background-color: #fff;
-      box-shadow: 0px 0px 5px 1px rgba(0,147,255,1);
-      color: #0093ff;
+      box-shadow: 0 0 25px rgb(120, 144, 255);
     }
 
     &:active {
@@ -106,6 +102,81 @@ img {
 
       background-color: #0093ff;
     }
+  }
+
+  &--white {
+    &:hover,
+    &:focus {
+      box-shadow: 0 0 25px rgb(120, 144, 255);
+    }
+
+    &:active {
+      box-shadow: none;
+    }
+  }
+}
+
+.tooltip {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 2;
+
+  width: 84px;
+  height: 84px;
+
+  background: url("../img/tooltip-icon.png") no-repeat center;
+  border-radius: 50%;
+
+  &:hover span {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.tooltip span {
+  position: absolute;
+  top: -100px;
+  right: 0;
+
+  display: block;
+  width: 262px;
+  padding: 12px 0;
+
+  text-align: center;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  font-family: 'Open Sans', sans-serif;
+  color: #999999;
+
+  visibility: hidden;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 30px 0 rgba(0,0,0,0.4);
+  opacity: 0;
+  transition: .2s opacity, .2s visibility;
+  pointer-events: none;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    right: 20px;
+
+    width: 0;
+    height: 0;
+
+    border-style: solid;
+    border-width: 10px 10px 0 10px;
+    border-color: #fff transparent transparent transparent;
+
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .tooltip span {
+    display: none;
   }
 }
 
