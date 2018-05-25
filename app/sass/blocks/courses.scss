@@ -54,3 +54,37 @@
   font-family: 'Roboto', sans-serif;
   color: #7d7d7d;
 }
+
+@media (max-width: 1199.98px) {
+  .courses__item-title {
+    margin-bottom: 20px;
+
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .courses {
+    padding: 50px 0;
+  }
+
+  .courses__title {
+    margin-bottom: 40px;
+  }
+
+  .courses__item {
+    height: auto;
+    margin-bottom: 40px;
+  }
+
+  .courses__item--ielts {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .courses__item {
+    margin-bottom: 30px;
+  }
+}

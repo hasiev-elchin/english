@@ -65,8 +65,11 @@
   color: #8493a8;
 }
 
-.main-footer__developer a {
+.main-footer__developer {
   text-align: right;
+}
+
+.main-footer__developer a {
   text-decoration: none;
   font-weight: 300;
   font-size: 13px;
@@ -78,5 +81,49 @@
 
   &:hover {
     color: #0099ff;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .main-footer {
+    padding-bottom: 40px;
+  }
+
+  .main-footer__header {
+    margin-bottom: 40px;
+  }
+
+  .main-footer__logo {
+    display: inline-block;
+    margin-bottom: 40px;
+  }
+
+  .main-footer__contacts {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .main-footer__contacts a {
+    margin-right: 0;
+    margin-bottom: 40px;
+
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .main-footer__copyright {
+    margin-bottom: 20px;
+
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  .main-footer__developer {
+    text-align: left;
+  }
+
+  .main-footer__developer a {
+    font-size: 16px;
   }
 }

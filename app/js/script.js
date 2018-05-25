@@ -35,7 +35,20 @@ $('.reviews__slider').slick({
 	arrows: true,
 	autoplay: true,
 	autoplaySpeed: 3000,
-	swipeToSlide: true
+	responsive: [
+		{
+			breakpoint: 991.98,
+			settings: {
+				fade: true
+			}
+		},
+		{
+			breakpoint: 575.98,
+			settings: {
+				arrows: false
+			}
+		}
+	]
 }).slick('slickGoTo', 2);
 
 new WOW().init();

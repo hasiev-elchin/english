@@ -1,6 +1,6 @@
 .price {
   padding: 110px 0;
-  padding-bottom: 75px;
+  padding-bottom: 45px;
 }
 
 .price__title {
@@ -9,8 +9,9 @@
 }
 
 .price__item {
-  padding: 32px 29px;
+  padding: 32px 25px;
   padding-top: 26px;
+  margin-bottom: 30px;
 
   text-align: center;
 
@@ -37,8 +38,8 @@
   margin: 0;
   margin-bottom: 26px;
 
-  font-weight: 300;
-  font-size: 50px;
+  font-weight: 100;
+  font-size: 45px;
   line-height: 50px;
   font-family: 'Roboto', sans-serif;
   color: #4f5362;
@@ -103,5 +104,31 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .price {
+    padding: 60px 0;
+    padding-bottom: 45px;
+  }
+
+  .price__item {
+    padding: 32px 20px;
+    padding-top: 26px;
+  }
+
+  .price__item-cost {
+    font-size: 38px;
+  }
+
+  .price__item-btn {
+    padding: 20px 27px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .price__item {
+    margin-bottom: 25px;
   }
 }

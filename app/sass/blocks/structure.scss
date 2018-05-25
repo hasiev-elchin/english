@@ -8,6 +8,19 @@
 }
 
 .structure__list {
-  margin-bottom: 70px;
   text-align: center;
+}
+
+.structure__item {
+  margin-bottom: 70px;
+}
+
+@media (max-width: 575.98px) {
+  .structure {
+    padding: 50px 0;
+  }
+
+  .structure__title {
+    margin-bottom: 55px;
+  }
 }

@@ -71,6 +71,10 @@
 
   font-size: 0;
 
+  background-color: transparent;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   border: none;
   cursor: pointer;
   outline: none;
@@ -79,13 +83,13 @@
 .slick-prev {
   left: -44px;
 
-  background: url("../img/arrow-left-icon.svg");
+  background-image: url("../img/arrow-left-icon.svg");
 }
 
 .slick-next {
   right: -24px;
 
-  background: url("../img/arrow-right-icon.svg");
+  background-image: url("../img/arrow-right-icon.svg");
 }
 
 .slick-dots {
@@ -116,7 +120,7 @@
 
   background-color: rgba(255,255,255, .3);
   border: none;
-  border-radius: 3px;
+  border-radius: 50%;
   cursor: pointer;
   outline: none;
 }
@@ -124,4 +128,41 @@
 .slick-active button {
   background-color: rgba(255,255,255, 1);
   box-shadow: 0 0 4pt 2pt #fff;
+}
+
+@media (max-width: 991.98px) {
+  .slick-arrow {
+    top: auto;
+    bottom: -20px;
+
+    width: 32px;
+    height: 56px;
+  }
+
+  .slick-prev {
+    left: 0;
+  }
+
+  .slick-next {
+    right: 0;
+  }
+
+  .reviews__slider-item {
+    margin-right: 0;
+  }
+
+  .slick-dots li {
+    margin-right: 32px;
+  }
+
+  .slick-dots button {
+    width: 21px;
+    height: 21px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .reviews {
+    padding-top: 50px;
+  }
 }

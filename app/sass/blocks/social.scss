@@ -1,20 +1,11 @@
 .social {
-  padding: 0;
-  margin: 0;
-
-  list-style-type: none;
+  @include list();
+  display: flex;
+  justify-content: space-between;
 }
 
 .social__item {
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 35px;
-
   font-size: 0;
-
-  &:last-child {
-    margin-right: 0;
-  }
 }
 
 .social__item svg {
@@ -22,5 +13,38 @@
 }
 
 .social__item a {
-  display: block;
+  position: relative;
+
+  display: inline-block;
+}
+
+@media (max-width: 1199.98px)  {
+  .social {
+    flex-direction: column;
+  }
+
+  .social__item {
+    margin-bottom: 40px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .social__item a {
+    padding-left: 45px;
+
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    font-family: 'Roboto', sans-serif;
+    color: #0099ff;
+  }
+
+  .social__item svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }

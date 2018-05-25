@@ -31,3 +31,23 @@
   line-height: 26px;
   font-family: 'Roboto', sans-serif;
 }
+
+@media (max-width: 991.98px) {
+  .stats {
+    padding: 50px 0;
+  }
+
+  .stats__title {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .stats__title {
+    margin-bottom: 50px;
+  }
+
+  .stats__item {
+    margin-bottom: 60px;
+  }
+}
